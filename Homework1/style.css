@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.site-header {
+  width: 100%;
+}
+
+.navbar {
+  max-width: 760px;
+  margin: 20px auto 0;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #c8c8c8;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0 16px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+
+/* Pseudo-class requirement */
+.nav-links a:hover {
+  background: #9f9f9f;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+}
+
+.profile-link img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.page-layout {
+  max-width: 760px;
+  margin: 10px auto;
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.side-panel {
+  flex: 0 0 150px;
+  background: #c8c8c8;
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Descendant selector requirement */
+.side-panel p {
+  line-height: 1.45;
+}
+
+.feed {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post {
+  background: #d7d7d7;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* Child selector requirement */
+.post > p {
+  margin: 10px 0;
+  line-height: 1.45;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-header img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.post-image {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.like-button,
+.form-card button {
+  border: none;
+  border-radius: 6px;
+  background: #2f5f8f;
+  color: white;
+  padding: 9px 14px;
+  cursor: pointer;
+}
+
+.like-button:hover,
+.form-card button:hover {
+  background: #244a70;
+}
+
+/* Adjacent sibling selector requirement */
+.post-header + .post-image {
+  margin-top: 10px;
+}
+
+/* General sibling selector requirement */
+.post-header ~ .like-button {
+  margin-top: 4px;
+}
+
+footer {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  background: #c8c8c8;
+  border-radius: 12px;
+  text-align: center;
+  padding: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.form-page {
+  max-width: 760px;
+  min-height: 560px;
+  margin: 10px auto 20px;
+  border: 2px dashed #aaa;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.form-card {
+  width: min(360px, 90%);
+  background: #d7d7d7;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.form-card h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+}
+
+.form-card button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.login-card {
+  text-align: center;
+}
+
+.login-card form {
+  margin: 14px 0;
+}
+
+.login-card label {
+  text-align: left;
+}
+
+.login-card button {
+  align-self: center;
+}
+
+.account-link {
+  color: #1590c5;
+  text-decoration: none;
+}
+
+.account-link:hover {
+  text-decoration: underline;
+}
+
+/* Another pseudo-element, also allowed by the requirements */
+.form-card h1::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 3px;
+  margin: 8px auto 0;
+  background: #2f5f8f;
+  border-radius: 999px;
+}
+
+@media (max-width: 700px) {
+  .navbar,
+  .page-layout,
+  footer,
+  .form-page {
+    width: calc(100% - 24px);
+  }
+
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .side-panel {
+    flex-basis: auto;
+  }
+
+  .right-panel {
+    display: none;
+  }
+
+  .form-page {
+    min-height: 500px;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    min-height: 56px;
+  }
+
+  .nav-links a {
+    min-height: 56px;
+    padding: 0 10px;
+  }
+
+  .profile-link img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .post,
+  .form-card {
+    padding: 16px;
+  }
+}
