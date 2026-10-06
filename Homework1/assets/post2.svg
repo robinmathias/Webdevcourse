@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
-  <rect width="600" height="360" fill="#e3dfd5"/>
-  <rect x="150" y="70" width="300" height="190" rx="12" fill="#404040"/>
-  <rect x="175" y="90" width="250" height="145" fill="#9fd0e0"/>
-  <rect x="110" y="265" width="380" height="25" rx="8" fill="#666"/>
-  <text x="300" y="330" text-anchor="middle" font-family="Arial" font-size="28" fill="#333">Coding time</text>
-</svg>

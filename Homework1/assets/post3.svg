@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
-  <rect width="600" height="360" fill="#efe7dc"/>
-  <ellipse cx="300" cy="290" rx="170" ry="30" fill="#c6b7a5"/>
-  <rect x="220" y="115" width="160" height="150" rx="18" fill="#ffffff"/>
-  <path d="M380 150c65 0 65 90 0 90" fill="none" stroke="#ffffff" stroke-width="24"/>
-  <ellipse cx="300" cy="125" rx="78" ry="23" fill="#6f4b32"/>
-  <text x="300" y="330" text-anchor="middle" font-family="Arial" font-size="28" fill="#553923">Coffee break</text>
-</svg>
