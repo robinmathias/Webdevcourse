@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "author": "Robin",
+    "createdAt": "2026-10-06T12:00:00Z",
+    "text": "Tartu city centre on a sunny day.",
+    "image": "assets/post1.jpg",
+    "imageAlt": "View of Tartu city centre from above"
+  },
+  {
+    "id": 2,
+    "author": "Karl",
+    "createdAt": "2026-10-05T10:30:00Z",
+    "text": "Anyone know what time the next lecture starts?"
+  },
+  {
+    "id": 3,
+    "author": "Mia",
+    "createdAt": "2026-10-04T16:15:00Z",
+    "text": "Working on Homework #1 today.",
+    "image": "assets/post2.jpg",
+    "imageAlt": "Coffee cup next to a laptop"
+  },
+  {
+    "id": 4,
+    "author": "Robin",
+    "createdAt": "2026-10-03T14:20:00Z",
+    "text": "Flexbox finally makes sense after some practice."
+  },
+  {
+    "id": 5,
+    "author": "Liis",
+    "createdAt": "2026-10-02T11:05:00Z",
+    "text": "Went for a walk in the park before coding again.",
+    "image": "assets/post3.jpg",
+    "imageAlt": "Walking in a park in autumn"
+  },
+  {
+    "id": 6,
+    "author": "Karl",
+    "createdAt": "2026-10-01T09:45:00Z",
+    "text": "Does anyone have notes from yesterday's class?"
+  },
+  {
+    "id": 7,
+    "author": "Mia",
+    "createdAt": "2026-09-30T13:00:00Z",
+    "text": "We finished the group assignment today."
+  },
+  {
+    "id": 8,
+    "author": "Robin",
+    "createdAt": "2026-09-29T17:25:00Z",
+    "text": "Trying to figure out how JavaScript works."
+  },
+  {
+    "id": 9,
+    "author": "Liis",
+    "createdAt": "2026-09-28T08:10:00Z",
+    "text": "Another early morning lecture."
+  },
+  {
+    "id": 10,
+    "author": "Karl",
+    "createdAt": "2026-09-27T18:40:00Z",
+    "text": "Finally got my webpage layout looking right."
+  }
+]
